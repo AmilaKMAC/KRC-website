@@ -1,21 +1,28 @@
-body{
-background: linear-gradient(to bottom right,
-        #c6def8,   
-        #e5eef6,  
-        #b7d0e9); }
+body {
+  background: linear-gradient(to bottom right,
+      #c6def8,
+      #e5eef6,
+      #b7d0e9);
+}
 
-.school-motto{
+.school-motto {
   background: radial-gradient(circle at center,
-        rgb(255, 255, 180) 0%,  
-        rgb(255, 230, 50) 60%,  
-        rgb(204, 153, 0) 100%);  
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+      rgb(255, 255, 180) 0%,
+      rgb(255, 230, 50) 60%,
+      rgb(204, 153, 0) 100%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .card {
-    transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .ratio iframe {
@@ -27,48 +34,47 @@ background: linear-gradient(to bottom right,
   aspect-ratio: 9 / 16;
 }
 
-@media (max-width: 768px) {
-  .ratio-9x16 {
-    aspect-ratio: 3 / 4; 
-  }
-}
-
 
 
 /* Navbar background and shadow */
 .navbar {
-    background-color: rgb(5, 5, 120) !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background-color: rgb(5, 5, 120) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Brand styling */
 .navbar-brand {
-    color: rgb(242, 238, 11) !important;
-    font-weight: bold;
+  color: rgb(242, 238, 11) !important;
+  font-weight: bold;
 }
 
 /* Links styling */
 .nav-link {
-    color: #ffffff !important;
-    transition: color 0.3s;
+  color: #ffffff !important;
+  transition: color 0.3s;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: rgb(255, 230, 50)  !important;
+  color: rgb(255, 230, 50) !important;
 }
 
 /* Dropdown menu */
 .dropdown-menu {
-    background-color: rgb(5, 5, 120);
+  background-color: rgb(5, 5, 120);
 }
 
 .dropdown-item {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .dropdown-item:hover {
-    background-color: #ffc107;
-    color: #515151 !important;
+  background-color: #ffc107;
+  color: #515151 !important;
 }
 
+@media (max-width: 768px) {
+  .ratio-9x16 {
+    aspect-ratio: 3 / 4;
+  }
+}
