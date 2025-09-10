@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // --- Load Navbar and then fix its links ---
-    loadComponent(`${basePath}/pages/navbar.html`, 'navbar-placeholder', () => {
+    loadComponent(`${basePath}/partials/navbar.html`, 'navbar-placeholder', () => {
         // This function runs AFTER the navbar is loaded
         const navLinks = document.querySelectorAll('#navbar-placeholder a');
         navLinks.forEach(link => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // --- Load Footer ---
-    loadComponent(`${basePath}/pages/footer.html`, 'footer-placeholder');
+    loadComponent(`${basePath}/partials/footer.html`, 'footer-placeholder');
 
 
     // --- Initialize Charts (only if the chart elements exist on the page) ---
