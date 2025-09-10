@@ -1,0 +1,12 @@
+.bw-icon {
+    color: black; /* default black */
+    transition: color 0.3s;
+}
+
+.bw-icon:hover {
+    color: gray; /* optional hover effect */
+}
+
+.card{
+    background-color: rgb(234, 236, 236)!important;
+}
